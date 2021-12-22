@@ -6,7 +6,10 @@ import Navbar from './Navbar'
 import NFTs from './NFTs'
 import Memes from './Memes'
 import Mint from './Mint'
+import Creator from './Creator'
 import Home from './Home'
+import Details from './Details'
+import Kulfys from './Kulfys'
 import Main from './Main'
 import axios from "axios";
 //import 'bootstrap/dist/css/bootstrap.min.css';
@@ -166,17 +169,23 @@ class App extends Component {
           <Route path="/nfts">
             <NFTs />
           </Route>
-          <Route path="/home">
+          <Route path="/create">
             <Home />
           </Route>
           <Route path="/mint">
             <Mint />
           </Route>
-          <Route path="/memes">
+          <Route path="/kulfys">
             <Memes />
           </Route>
+          <Route path="/creator">
+            <Creator />
+          </Route>
+          <Route path="/kulfy" >
+            <Details />
+          </Route>
           <Route path="/">
-            <Home />
+            <Memes />
           </Route>
     
         </Switch>
